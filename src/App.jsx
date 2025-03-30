@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import Results from "./components/Results";
 import UserInput from "./components/UserInput";
 import React, { useState } from "react";
 
@@ -28,6 +29,7 @@ const changeInput=(inputIdentifier, newValue)=>{
     <>
       <Header />
       <UserInput onChangeInput={changeInput} userInput={userInput}/>
+      <Results userInput={userInput}/>
     </>
   );
 }
